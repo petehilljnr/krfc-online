@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/krfc-online/static/css/main.5068fc8f.css",
+    "main.js": "/krfc-online/static/js/main.f77b2a7e.js",
+    "static/media/demon.png": "/krfc-online/static/media/demon.43aaafda0b1eaf0921cd.png",
+    "index.html": "/krfc-online/index.html",
+    "main.5068fc8f.css.map": "/krfc-online/static/css/main.5068fc8f.css.map",
+    "main.f77b2a7e.js.map": "/krfc-online/static/js/main.f77b2a7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5068fc8f.css",
+    "static/js/main.f77b2a7e.js"
+  ]
+}
