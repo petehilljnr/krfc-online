@@ -49,7 +49,7 @@ const FixtureCard = (props) => {
             className="text-center"
             style={{ fontSize: "0.7rem", justifyContent: "middle" }}
           >
-            <i>{d.trophy}</i>
+           <span dangerouslySetInnerHTML={{ __html: d.trophy}} />
           </Col>
         </Row>
           </Col>

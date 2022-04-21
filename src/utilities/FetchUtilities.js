@@ -27,7 +27,7 @@ export const fixturesFormat = (xml, target_org) => {
     f.section_name = attr.SectionName;
     f.home_team = getShortName(attr.HomeTeamName);
     f.away_team = getShortName(attr.AwayTeamName);
-    f.trophy = attr.PublicNotes?.replace('&lt;p&gt;','').replace('&lt;/p&gt;','')
+    f.trophy = attr.PublicNotes ? htmlDecode(attr.PublicNotes) : "";
 
     if (!target_org || target_org === "") {
       fixtures.push(f);
@@ -43,6 +43,12 @@ export const fixturesFormat = (xml, target_org) => {
 
   return fixtures;
 };
+
+function htmlDecode(input){
+    var e = document.createElement('div');
+    e.innerHTML = input;
+    return e.childNodes[0].nodeValue;
+  }
 
 export const getShortName = (name_string) => {
   const names = name_string.split(":");
